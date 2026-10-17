@@ -1,0 +1,247 @@
+site_name: "The DeFi Derivatives Lawyer"
+site_description: "CFTC Regulation, Swap Contracts & AI-Augmented Practice"
+site_author: "Vanguard Academy"
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: cyan
+    accent: amber
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - toc.integrate
+    - search.suggest
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+  - attr_list
+  - pymdownx.emoji
+  - pymdownx.mark
+  - pymdownx.critic
+
+nav:
+  - Home: index.md
+  - "Part I: Regulatory Architecture":
+    - Overview: part-1-regulatory-architecture/README.md
+    - "Ch 1: Regulatory Landscape":
+      - Introduction: part-1-regulatory-architecture/chapter-1-landscape/README.md
+      - "1.1 Why Derivatives Lawyers Exist": part-1-regulatory-architecture/chapter-1-landscape/1.1-why-derivatives-lawyers.md
+      - "1.2 CFTC vs SEC Divide": part-1-regulatory-architecture/chapter-1-landscape/1.2-cftc-sec-divide.md
+      - "1.3 The Regulatory Ecosystem": part-1-regulatory-architecture/chapter-1-landscape/1.3-regulatory-ecosystem.md
+      - "1.4 Digital Assets Classification": part-1-regulatory-architecture/chapter-1-landscape/1.4-digital-assets-classification.md
+      - "Case Study: BTC as Commodity": part-1-regulatory-architecture/chapter-1-landscape/case-study-btc-commodity.md
+      - Review Questions: part-1-regulatory-architecture/chapter-1-landscape/review-questions.md
+    - "Ch 2: Core Instruments":
+      - Introduction: part-1-regulatory-architecture/chapter-2-instruments/README.md
+      - "2.1 Futures Contracts": part-1-regulatory-architecture/chapter-2-instruments/2.1-futures-contracts.md
+      - "2.2 Options": part-1-regulatory-architecture/chapter-2-instruments/2.2-options.md
+      - "2.3 Forward Contracts": part-1-regulatory-architecture/chapter-2-instruments/2.3-forward-contracts.md
+      - "2.4 Swaps Overview": part-1-regulatory-architecture/chapter-2-instruments/2.4-swaps-overview.md
+      - "2.5 Economic Function": part-1-regulatory-architecture/chapter-2-instruments/2.5-economic-function.md
+      - "Case Study: Onion Futures Act": part-1-regulatory-architecture/chapter-2-instruments/case-study-onion-futures.md
+      - Review Questions: part-1-regulatory-architecture/chapter-2-instruments/review-questions.md
+    - "Ch 3: CEA & Dodd-Frank":
+      - Introduction: part-1-regulatory-architecture/chapter-3-cea-dodd-frank/README.md
+      - "3.1 CEA Structure": part-1-regulatory-architecture/chapter-3-cea-dodd-frank/3.1-cea-structure.md
+      - "3.2 Dodd-Frank Title VII": part-1-regulatory-architecture/chapter-3-cea-dodd-frank/3.2-dodd-frank-title-vii.md
+      - "3.3 Exemptions & Exclusions": part-1-regulatory-architecture/chapter-3-cea-dodd-frank/3.3-exemptions-exclusions.md
+      - "3.4 Swap Taxonomy": part-1-regulatory-architecture/chapter-3-cea-dodd-frank/3.4-swap-taxonomy.md
+      - "Case Study: AIG & CDS Crisis": part-1-regulatory-architecture/chapter-3-cea-dodd-frank/case-study-aig-cds.md
+      - Review Questions: part-1-regulatory-architecture/chapter-3-cea-dodd-frank/review-questions.md
+  - "Part II: Swap Regulation":
+    - Overview: part-2-swap-regulation/README.md
+    - "Ch 4: Swap Definitions":
+      - Introduction: part-2-swap-regulation/chapter-4-swap-definitions/README.md
+      - "4.1 Statutory Definition": part-2-swap-regulation/chapter-4-swap-definitions/4.1-statutory-definition.md
+      - "4.2 Interest Rate Swaps": part-2-swap-regulation/chapter-4-swap-definitions/4.2-interest-rate-swaps.md
+      - "4.3 CDS & TRS": part-2-swap-regulation/chapter-4-swap-definitions/4.3-cds-trs.md
+      - "4.4 Commodity Swaps": part-2-swap-regulation/chapter-4-swap-definitions/4.4-commodity-swaps.md
+      - "4.5 Equity Swaps": part-2-swap-regulation/chapter-4-swap-definitions/4.5-equity-swaps.md
+      - "4.6 FX Swaps": part-2-swap-regulation/chapter-4-swap-definitions/4.6-fx-swaps.md
+      - Review Questions: part-2-swap-regulation/chapter-4-swap-definitions/review-questions.md
+    - "Ch 5: Dealers & Participants":
+      - Introduction: part-2-swap-regulation/chapter-5-dealers-participants/README.md
+      - "5.1 Swap Dealer Registration": part-2-swap-regulation/chapter-5-dealers-participants/5.1-swap-dealer-registration.md
+      - "5.2 Major Swap Participant": part-2-swap-regulation/chapter-5-dealers-participants/5.2-major-swap-participant.md
+      - "5.3 Business Conduct": part-2-swap-regulation/chapter-5-dealers-participants/5.3-business-conduct.md
+      - "5.4 Capital & Margin": part-2-swap-regulation/chapter-5-dealers-participants/5.4-capital-margin.md
+      - "5.5 Recordkeeping": part-2-swap-regulation/chapter-5-dealers-participants/5.5-recordkeeping.md
+      - "Case Study: Archegos": part-2-swap-regulation/chapter-5-dealers-participants/case-study-archegos.md
+      - Review Questions: part-2-swap-regulation/chapter-5-dealers-participants/review-questions.md
+    - "Ch 6: Clearing & Execution":
+      - Introduction: part-2-swap-regulation/chapter-6-clearing-execution/README.md
+      - "6.1 Mandatory Clearing": part-2-swap-regulation/chapter-6-clearing-execution/6.1-mandatory-clearing.md
+      - "6.2 DCOs": part-2-swap-regulation/chapter-6-clearing-execution/6.2-dcos.md
+      - "6.3 SEFs": part-2-swap-regulation/chapter-6-clearing-execution/6.3-sefs.md
+      - "6.4 Reporting & SDRs": part-2-swap-regulation/chapter-6-clearing-execution/6.4-reporting-sdrs.md
+      - "6.5 End-User Exception": part-2-swap-regulation/chapter-6-clearing-execution/6.5-end-user-exception.md
+      - "Case Study: LCH Clearing": part-2-swap-regulation/chapter-6-clearing-execution/case-study-lch-clearing.md
+      - Review Questions: part-2-swap-regulation/chapter-6-clearing-execution/review-questions.md
+    - "Ch 7: Cross-Border":
+      - Introduction: part-2-swap-regulation/chapter-7-cross-border/README.md
+      - "7.1 CFTC Cross-Border": part-2-swap-regulation/chapter-7-cross-border/7.1-cftc-cross-border.md
+      - "7.2 Substituted Compliance": part-2-swap-regulation/chapter-7-cross-border/7.2-substituted-compliance.md
+      - "7.3 EMIR & MiFID II": part-2-swap-regulation/chapter-7-cross-border/7.3-emir-mifid.md
+      - "7.4 DeFi Jurisdiction": part-2-swap-regulation/chapter-7-cross-border/7.4-defi-jurisdiction.md
+      - "Case Study: London Whale": part-2-swap-regulation/chapter-7-cross-border/case-study-london-whale.md
+      - Review Questions: part-2-swap-regulation/chapter-7-cross-border/review-questions.md
+  - "Part III: DeFi Derivatives":
+    - Overview: part-3-defi-derivatives/README.md
+    - "Ch 8: DeFi as Derivatives":
+      - Introduction: part-3-defi-derivatives/chapter-8-defi-as-derivatives/README.md
+      - "8.1 Functional Equivalence": part-3-defi-derivatives/chapter-8-defi-as-derivatives/8.1-functional-equivalence.md
+      - "8.2 AMMs as Market-Making": part-3-defi-derivatives/chapter-8-defi-as-derivatives/8.2-amm-market-making.md
+      - "8.3 Oracles as Price Discovery": part-3-defi-derivatives/chapter-8-defi-as-derivatives/8.3-oracles-price-discovery.md
+      - "8.4 Smart Contracts as Derivatives": part-3-defi-derivatives/chapter-8-defi-as-derivatives/8.4-smart-contracts-derivatives.md
+      - "Case Study: Ooki DAO": part-3-defi-derivatives/chapter-8-defi-as-derivatives/case-study-ooki-dao.md
+      - Review Questions: part-3-defi-derivatives/chapter-8-defi-as-derivatives/review-questions.md
+    - "Ch 9: Perpetuals & Synthetics":
+      - Introduction: part-3-defi-derivatives/chapter-9-perpetuals-synthetics/README.md
+      - "9.1 Perpetual Futures": part-3-defi-derivatives/chapter-9-perpetuals-synthetics/9.1-perpetual-futures.md
+      - "9.2 Synthetic Assets": part-3-defi-derivatives/chapter-9-perpetuals-synthetics/9.2-synthetic-assets.md
+      - "9.3 Prediction Markets": part-3-defi-derivatives/chapter-9-perpetuals-synthetics/9.3-prediction-markets.md
+      - "9.4 Options Protocols": part-3-defi-derivatives/chapter-9-perpetuals-synthetics/9.4-options-protocols.md
+      - "Case Study: Polymarket": part-3-defi-derivatives/chapter-9-perpetuals-synthetics/case-study-polymarket.md
+      - "Case Study: dYdX": part-3-defi-derivatives/chapter-9-perpetuals-synthetics/case-study-dydx.md
+      - Review Questions: part-3-defi-derivatives/chapter-9-perpetuals-synthetics/review-questions.md
+    - "Ch 10: Liquidity & Compliance":
+      - Introduction: part-3-defi-derivatives/chapter-10-liquidity-compliance/README.md
+      - "10.1 LP as Derivative Exposure": part-3-defi-derivatives/chapter-10-liquidity-compliance/10.1-lp-derivative-exposure.md
+      - "10.2 Protocol as SEF": part-3-defi-derivatives/chapter-10-liquidity-compliance/10.2-protocol-as-sef.md
+      - "10.3 KYC/AML Permissionless": part-3-defi-derivatives/chapter-10-liquidity-compliance/10.3-kyc-aml-permissionless.md
+      - "10.4 Compliant Protocols": part-3-defi-derivatives/chapter-10-liquidity-compliance/10.4-compliant-protocols.md
+      - Review Questions: part-3-defi-derivatives/chapter-10-liquidity-compliance/review-questions.md
+    - "Ch 11: DAO Governance & Liability":
+      - Introduction: part-3-defi-derivatives/chapter-11-dao-regulatory/README.md
+      - "11.1 DAO Person Liability": part-3-defi-derivatives/chapter-11-dao-regulatory/11.1-dao-person-liability.md
+      - "11.2 Token Holder Liability": part-3-defi-derivatives/chapter-11-dao-regulatory/11.2-token-holder-liability.md
+      - "11.3 Legal Wrappers": part-3-defi-derivatives/chapter-11-dao-regulatory/11.3-legal-wrappers.md
+      - "11.4 Progressive Decentralization": part-3-defi-derivatives/chapter-11-dao-regulatory/11.4-progressive-decentralization.md
+      - "Case Study: bZeroX to Ooki": part-3-defi-derivatives/chapter-11-dao-regulatory/case-study-bzerox-ooki.md
+      - Review Questions: part-3-defi-derivatives/chapter-11-dao-regulatory/review-questions.md
+  - "Part IV: Contract Structures":
+    - Overview: part-4-contract-structures/README.md
+    - "Ch 12: ISDA & Smart Contracts":
+      - Introduction: part-4-contract-structures/chapter-12-isda-smart-contracts/README.md
+      - "12.1 ISDA Anatomy": part-4-contract-structures/chapter-12-isda-smart-contracts/12.1-isda-anatomy.md
+      - "12.2 The Schedule": part-4-contract-structures/chapter-12-isda-smart-contracts/12.2-isda-schedule.md
+      - "12.3 Confirmations": part-4-contract-structures/chapter-12-isda-smart-contracts/12.3-confirmations.md
+      - "12.4 Smart Contract as ISDA": part-4-contract-structures/chapter-12-isda-smart-contracts/12.4-smart-contract-isda.md
+      - "12.5 ISDA CDM": part-4-contract-structures/chapter-12-isda-smart-contracts/12.5-isda-cdm.md
+      - "Case Study: IRS vs DeFi": part-4-contract-structures/chapter-12-isda-smart-contracts/case-study-irs-vs-defi.md
+      - Review Questions: part-4-contract-structures/chapter-12-isda-smart-contracts/review-questions.md
+    - "Ch 13: Collateral & Credit":
+      - Introduction: part-4-contract-structures/chapter-13-collateral-credit/README.md
+      - "13.1 Credit Support Annex": part-4-contract-structures/chapter-13-collateral-credit/13.1-credit-support-annex.md
+      - "13.2 Margin Types": part-4-contract-structures/chapter-13-collateral-credit/13.2-margin-types.md
+      - "13.3 On-Chain Collateral": part-4-contract-structures/chapter-13-collateral-credit/13.3-onchain-collateral.md
+      - "13.4 Liquidation Mechanics": part-4-contract-structures/chapter-13-collateral-credit/13.4-liquidation-mechanics.md
+      - "Case Study: MakerDAO Black Thursday": part-4-contract-structures/chapter-13-collateral-credit/case-study-maker-black-thursday.md
+      - Review Questions: part-4-contract-structures/chapter-13-collateral-credit/review-questions.md
+    - "Ch 14: Netting & Close-Out":
+      - Introduction: part-4-contract-structures/chapter-14-netting-closeout/README.md
+      - "14.1 Netting Fundamentals": part-4-contract-structures/chapter-14-netting-closeout/14.1-netting-fundamentals.md
+      - "14.2 Events of Default": part-4-contract-structures/chapter-14-netting-closeout/14.2-events-of-default.md
+      - "14.3 Early Termination": part-4-contract-structures/chapter-14-netting-closeout/14.3-early-termination.md
+      - "14.4 DeFi Netting": part-4-contract-structures/chapter-14-netting-closeout/14.4-defi-netting.md
+      - "14.5 Bankruptcy Safe Harbors": part-4-contract-structures/chapter-14-netting-closeout/14.5-bankruptcy-safe-harbors.md
+      - Review Questions: part-4-contract-structures/chapter-14-netting-closeout/review-questions.md
+    - "Ch 15: Structured Products":
+      - Introduction: part-4-contract-structures/chapter-15-structured-products/README.md
+      - "15.1 Structured Notes & CDOs": part-4-contract-structures/chapter-15-structured-products/15.1-structured-notes.md
+      - "15.2 Tokenized Structured Products": part-4-contract-structures/chapter-15-structured-products/15.2-tokenized-structured.md
+      - "15.3 DeFi Vaults": part-4-contract-structures/chapter-15-structured-products/15.3-defi-vaults.md
+      - "15.4 Tranching": part-4-contract-structures/chapter-15-structured-products/15.4-tranching.md
+      - "Case Study: Goldfinch & Maple": part-4-contract-structures/chapter-15-structured-products/case-study-goldfinch-maple.md
+      - Review Questions: part-4-contract-structures/chapter-15-structured-products/review-questions.md
+  - "Part V: Compliance & Enforcement":
+    - Overview: part-5-compliance-enforcement/README.md
+    - "Ch 16: Compliance Programs":
+      - Introduction: part-5-compliance-enforcement/chapter-16-compliance-programs/README.md
+      - "16.1 Program Architecture": part-5-compliance-enforcement/chapter-16-compliance-programs/16.1-program-architecture.md
+      - "16.2 CCO Requirements": part-5-compliance-enforcement/chapter-16-compliance-programs/16.2-cco-requirements.md
+      - "16.3 Trade Surveillance": part-5-compliance-enforcement/chapter-16-compliance-programs/16.3-trade-surveillance.md
+      - "16.4 DeFi Compliance": part-5-compliance-enforcement/chapter-16-compliance-programs/16.4-defi-compliance.md
+      - Review Questions: part-5-compliance-enforcement/chapter-16-compliance-programs/review-questions.md
+    - "Ch 17: Anti-Manipulation":
+      - Introduction: part-5-compliance-enforcement/chapter-17-manipulation-integrity/README.md
+      - "17.1 CEA Provisions": part-5-compliance-enforcement/chapter-17-manipulation-integrity/17.1-cea-anti-manipulation.md
+      - "17.2 Spoofing & Wash Trading": part-5-compliance-enforcement/chapter-17-manipulation-integrity/17.2-spoofing-wash-trading.md
+      - "17.3 DeFi Manipulation": part-5-compliance-enforcement/chapter-17-manipulation-integrity/17.3-defi-manipulation.md
+      - "17.4 On-Chain Surveillance": part-5-compliance-enforcement/chapter-17-manipulation-integrity/17.4-onchain-surveillance.md
+      - "Case Study: Mango Markets": part-5-compliance-enforcement/chapter-17-manipulation-integrity/case-study-mango-markets.md
+      - Review Questions: part-5-compliance-enforcement/chapter-17-manipulation-integrity/review-questions.md
+    - "Ch 18: Position Limits":
+      - Introduction: part-5-compliance-enforcement/chapter-18-position-limits/README.md
+      - "18.1 Federal Position Limits": part-5-compliance-enforcement/chapter-18-position-limits/18.1-position-limits.md
+      - "18.2 Large Trader Reporting": part-5-compliance-enforcement/chapter-18-position-limits/18.2-large-trader-reporting.md
+      - "18.3 COT Reports": part-5-compliance-enforcement/chapter-18-position-limits/18.3-cot-reports.md
+      - "18.4 DeFi Position Reporting": part-5-compliance-enforcement/chapter-18-position-limits/18.4-defi-position-reporting.md
+      - Review Questions: part-5-compliance-enforcement/chapter-18-position-limits/review-questions.md
+    - "Ch 19: Enforcement Actions":
+      - Introduction: part-5-compliance-enforcement/chapter-19-enforcement-cases/README.md
+      - "19.1 Enforcement Powers": part-5-compliance-enforcement/chapter-19-enforcement-cases/19.1-enforcement-powers.md
+      - "19.2 Landmark TradFi Cases": part-5-compliance-enforcement/chapter-19-enforcement-cases/19.2-landmark-tradfi-cases.md
+      - "19.3 DeFi Enforcement": part-5-compliance-enforcement/chapter-19-enforcement-cases/19.3-defi-enforcement.md
+      - "19.4 Reading Enforcement Orders": part-5-compliance-enforcement/chapter-19-enforcement-cases/19.4-reading-enforcement-orders.md
+      - "Case Study: Ooki DAO": part-5-compliance-enforcement/chapter-19-enforcement-cases/case-study-ooki-timeline.md
+      - "Case Study: Opyn": part-5-compliance-enforcement/chapter-19-enforcement-cases/case-study-opyn.md
+      - Review Questions: part-5-compliance-enforcement/chapter-19-enforcement-cases/review-questions.md
+  - "Part VI: AI-Augmented Practice":
+    - Overview: part-6-ai-augmented-practice/README.md
+    - "Ch 20: AI Contract Analysis":
+      - Introduction: part-6-ai-augmented-practice/chapter-20-ai-contract-analysis/README.md
+      - "20.1 Parsing ISDA Docs": part-6-ai-augmented-practice/chapter-20-ai-contract-analysis/20.1-parsing-isda.md
+      - "20.2 Schedule Negotiation": part-6-ai-augmented-practice/chapter-20-ai-contract-analysis/20.2-schedule-negotiation.md
+      - "20.3 Smart Contract Audit": part-6-ai-augmented-practice/chapter-20-ai-contract-analysis/20.3-smart-contract-audit.md
+      - "20.4 Drafting Compliance": part-6-ai-augmented-practice/chapter-20-ai-contract-analysis/20.4-drafting-compliance.md
+      - Prompt Templates: part-6-ai-augmented-practice/chapter-20-ai-contract-analysis/prompt-templates.md
+      - Review Questions: part-6-ai-augmented-practice/chapter-20-ai-contract-analysis/review-questions.md
+    - "Ch 21: Regulatory Monitoring":
+      - Introduction: part-6-ai-augmented-practice/chapter-21-ai-regulatory-monitoring/README.md
+      - "21.1 Tracking Rulemaking": part-6-ai-augmented-practice/chapter-21-ai-regulatory-monitoring/21.1-tracking-rulemaking.md
+      - "21.2 Enforcement Analysis": part-6-ai-augmented-practice/chapter-21-ai-regulatory-monitoring/21.2-enforcement-analysis.md
+      - "21.3 Cross-Jurisdiction": part-6-ai-augmented-practice/chapter-21-ai-regulatory-monitoring/21.3-cross-jurisdiction.md
+      - "21.4 Change Management": part-6-ai-augmented-practice/chapter-21-ai-regulatory-monitoring/21.4-change-management.md
+      - Prompt Templates: part-6-ai-augmented-practice/chapter-21-ai-regulatory-monitoring/prompt-templates.md
+      - Review Questions: part-6-ai-augmented-practice/chapter-21-ai-regulatory-monitoring/review-questions.md
+    - "Ch 22: Managing AI Agents":
+      - Introduction: part-6-ai-augmented-practice/chapter-22-managing-ai-agents/README.md
+      - "22.1 Agent Architecture": part-6-ai-augmented-practice/chapter-22-managing-ai-agents/22.1-agent-architecture.md
+      - "22.2 Legal Prompt Engineering": part-6-ai-augmented-practice/chapter-22-managing-ai-agents/22.2-prompt-engineering-legal.md
+      - "22.3 Hallucination Detection": part-6-ai-augmented-practice/chapter-22-managing-ai-agents/22.3-hallucination-detection.md
+      - "22.4 Multi-Agent Workflows": part-6-ai-augmented-practice/chapter-22-managing-ai-agents/22.4-multi-agent-workflows.md
+      - "22.5 Quality Assurance": part-6-ai-augmented-practice/chapter-22-managing-ai-agents/22.5-quality-assurance.md
+      - Prompt Templates: part-6-ai-augmented-practice/chapter-22-managing-ai-agents/prompt-templates.md
+      - Review Questions: part-6-ai-augmented-practice/chapter-22-managing-ai-agents/review-questions.md
+    - "Ch 23: Future Practice":
+      - Introduction: part-6-ai-augmented-practice/chapter-23-future-practice/README.md
+      - "23.1 Autonomous Compliance": part-6-ai-augmented-practice/chapter-23-future-practice/23.1-autonomous-compliance.md
+      - "23.2 AI-Native Regulation": part-6-ai-augmented-practice/chapter-23-future-practice/23.2-ai-native-regulation.md
+      - "23.3 DeFi-TradFi Convergence": part-6-ai-augmented-practice/chapter-23-future-practice/23.3-convergence.md
+      - "23.4 Career Path": part-6-ai-augmented-practice/chapter-23-future-practice/23.4-career-path.md
+      - Review Questions: part-6-ai-augmented-practice/chapter-23-future-practice/review-questions.md
+  - Appendices:
+    - "A: CFTC Rule Reference": appendices/cftc-rule-reference.md
+    - "B: ISDA Documentation Reference": appendices/isda-templates.md
+    - "C: AI Prompt Library": appendices/ai-prompt-library.md
+    - "D: DeFi Classification Matrix": appendices/defi-classification-matrix.md
+    - "E: Enforcement Digest": appendices/enforcement-digest.md
+    - "F: Recommended Reading": appendices/recommended-reading.md
+  - Glossary: GLOSSARY.md

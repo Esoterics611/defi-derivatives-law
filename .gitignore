@@ -1,0 +1,16 @@
+node_modules/
+.env
+.env.local
+.env.*.local
+.venv/
+venv/
+__pycache__/
+.dart_tool/
+.claude/settings.local.json
+%TEMP%/
+.DS_Store
+site/
+
+# Local tooling state
+.claude/settings.local.json
+tmpclaude-*
